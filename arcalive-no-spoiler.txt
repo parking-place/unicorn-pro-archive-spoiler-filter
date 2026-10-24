@@ -1,0 +1,17 @@
+[Adblock Plus 2.0]
+! Title: 아카라이브 스포일러 가림 해제
+! Description: 아카라이브의 스포일러 경고 배너와 본문 흐림 효과를 제거합니다.
+! Version: 20261024.1
+! Last modified: 2026-10-24
+! Expires: 1 day
+! Homepage: https://github.com/parking-place/unicorn-pro-archive-spoiler-filter
+!
+! 유니콘 Pro의 사용자 필터에 이 파일의 Raw URL을 등록하세요.
+! 갤럭시 Chrome: 유니콘 Pro의 인증서 설치 및 Chrome의 HTTPS 필터링/광고 차단이 필요합니다.
+! DNS 보호만 켜면 본문의 스타일 규칙이 적용되지 않습니다.
+!
+! 스포일러 경고 배너와 배너 아래의 여백 제거
+arca.live##.spoiler-alert-content
+!
+! 스크롤 위치와 관계없이 본문의 흐림/흑백 효과를 즉시 해제
+arca.live##.article-content.spoiler-filter:style(filter: none !important; -webkit-filter: none !important; transition: none !important;)
