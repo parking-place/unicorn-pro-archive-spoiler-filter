@@ -1,14 +1,24 @@
 # 아카라이브 스포일러 가림 해제
 
-유니콘 Pro 사용자 필터입니다. `arca.live`의 스포일러 경고 배너와 본문에 적용되는 흐림·흑백 효과를 제거합니다.
+유니콘 Pro 사용자 필터입니다. `arca.live` 본문의 흐림·흑백 효과를 제거하며, 스포일러 경고 배너의 유지 여부에 따라 두 버전 중 하나를 선택할 수 있습니다.
 
 ## 구독 URL
 
-유니콘 Pro의 사용자 필터 추가 화면에 아래 주소를 입력하세요.
+유니콘 Pro의 사용자 필터 추가 화면에 원하는 버전의 주소를 입력하세요.
+
+**배너와 본문 가림 모두 제거 — 기존 버전**
 
 ```text
 https://raw.githubusercontent.com/parking-place/unicorn-pro-archive-spoiler-filter/main/arcalive-no-spoiler.txt
 ```
+
+**배너 유지, 본문 가림만 제거 — 추가 버전**
+
+```text
+https://raw.githubusercontent.com/parking-place/unicorn-pro-archive-spoiler-filter/main/arcalive-no-blur.txt
+```
+
+**두 필터 중 하나만 활성화하세요.** 배너 유지 버전으로 바꿀 때는 기존 `arcalive-no-spoiler.txt` 필터를 꺼야 합니다. 두 버전을 함께 켜면 기존 필터가 배너를 계속 숨깁니다.
 
 ## 갤럭시 / Chrome 설정
 
@@ -23,6 +33,7 @@ https://raw.githubusercontent.com/parking-place/unicorn-pro-archive-spoiler-filt
 
 - 2026-10-24에 아카라이브의 실제 HTML, CSS, JavaScript를 확인했습니다.
 - Chromium에서 해당 HTML/CSS를 사용해 390px 및 1280px 너비로 검증했습니다. 필터 적용 후 경고 배너는 숨겨지고 본문 `filter`는 `none`이 되며, 본문 높이는 유지됩니다.
+- 배너 유지 버전은 기존의 본문 스타일 규칙을 그대로 사용하고, 배너를 숨기는 규칙만 제외했습니다.
 - 실제 갤럭시 기기의 유니콘 Pro 앱 내 동작은 아직 검증하지 않았습니다.
 - 사이트가 HTML 클래스나 CSS를 변경하면 규칙 수정이 필요할 수 있습니다.
 
